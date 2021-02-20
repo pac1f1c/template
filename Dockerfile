@@ -1,3 +1,3 @@
 FROM python:3
-ADD quine.py /
-CMD [ "python", "./quine.py" ]
+ADD guess.py /
+CMD [ "./guess.py" ]
