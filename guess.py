@@ -4,7 +4,7 @@ import random
 import sys
 import logging
 
-LOGGER = logging.getLogger("")
+LOGGER = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 
@@ -13,8 +13,8 @@ def main():
     guesses = []
 
     while len(guesses) < 5:
+        guess = input("Guess a number between 1 and 10: ")
         try:
-            guess = input("Guess a number between 1 and 10: ")
             guess = int(guess)
         except ValueError:
             print("{} is not a number!".format(guess))
