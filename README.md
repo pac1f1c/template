@@ -16,4 +16,4 @@ Simple number guessing game made with Python
 
 [Learn Python](https://github.com/trekhleb/learn-python)
 
-Unix. Программное окружение | Керниган Брайан У., Пайк Роб
+Unix. Программное окружение | Керниган, Пайк
