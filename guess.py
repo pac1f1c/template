@@ -17,19 +17,18 @@ def main():
         try:
             guess = int(guess)
         except ValueError:
-            print("{} is not a number!".format(guess))
+            logging.info("%s is not a number!", guess)
         else:
             if guess == secret_num:
-                print("You win! My number was {}".format(guess))
+                logging.info("You win! My number was %s", guess)
                 break
             elif guess < secret_num:
-                logging.info("My number is higher than {}".format(guess))
+                logging.info("My number is higher than %s", guess)
             else:
-                print("My number is lower than {}".format(guess))
+                logging.info("My number is lower than %s", guess)
             guesses.append(guess)
-
     else:
-        print("You ran out of choices. My number was {}".format(secret_num))
+        logging.info("You ran out of choices. My number was %s", secret_num)
 
 
 if __name__ == "__main__":
